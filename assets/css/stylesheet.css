@@ -4,24 +4,23 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/*the header is fixed to the top of the page at all times. This whole section controls the hheader*/
 header {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    padding: 35px;
+    padding: 26px;
     background-color: rgb(32, 102, 207);
     /* creates a little line under the header box for added style */
     border-bottom: 20px solid rgb(67, 122, 203);
-    /* padding-right: 20px; */
 }
 
+/*controls the header links*/
 li {
-    /* padding-top: 0px; */
     /* this gets rid of any stlye elements a list would apply to the links */
     list-style-type: none;
     /* this puts distance between all the links*/
@@ -46,21 +45,23 @@ a {
     padding-top: 6%;
     text-align: center;
     background-color: beige;
-    font-size: 20px;
+    font-size: 30px;
     color: rgb(73, 73, 73);
+
 }
 
 /* sets the "my new website" font size */
-h1 {
-    font-size: 30px
+#blurbT {
+    font-size: 20px
 }
 
 /* controls the comming soon base margins, border, and the backgrounds width and height */
-body section div {
+.mainbody img {
     margin: 20px auto ;
-    width: 400px;
-    height: 400px;
+    width: 640px;
+    height: 362px;
     border: 20px outset rgb(203, 203, 185);
+
 }
 
 /* the coming soon text and the padding and margins around it */
@@ -72,7 +73,6 @@ body section div {
 
 /* the contact me text and the box which contains all contact elements */
 #contact-me-text {
-    margin: 30px auto 0 auto;
     background-color: rgb(99, 143, 209);
     /* creates a little line under the header box for added style */
     border-top: 10px solid rgb(128, 172, 237);
