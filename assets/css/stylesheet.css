@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    max-height: 100vh;
 }
 
 /*the header is fixed to the top of the page at all times. This whole section controls the hheader*/
@@ -14,10 +15,16 @@ header {
     left: 0;
     right: 0;
     padding: 26px;
-    background-color: rgb(32, 102, 207);
+    /* background-color: rgb(32, 102, 207); */
     /* creates a little line under the header box for added style */
     border-bottom: 20px solid rgb(67, 122, 203);
 }
+
+header,
+footer {
+    background-color: rgb(32, 102, 207);
+}
+
 
 /*controls the header links*/
 li {
@@ -101,9 +108,13 @@ a {
 
 /* bottom footer color, size, and its height */
 footer {
-    margin: auto;
-    background-color: rgb(32, 102, 207);
-    height: 100vh;
+    margin: 0 auto;
+    padding: 10px 0;
+    /* background-color: rgb(32, 102, 207); */
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
 }
 
 /* the footer text size and its padding */
@@ -111,3 +122,11 @@ footer div {
     padding: 20px;
     font-size: 20px;
 }
+
+/* this makes it so that once the window has extended past 1180px then the footer will follow the bottom */
+@media (max-height:1180px) {
+
+    footer {
+      position: initial;
+    }
+  }
